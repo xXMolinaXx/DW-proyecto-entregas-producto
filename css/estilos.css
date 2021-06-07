@@ -5,62 +5,56 @@ html {
     width: 100%;
 }
 
-.color-verde {
-    background: #017C84;
-}
-
-.logo {
-    width: 200px;
-}
-
-.degradado {
-    background: rgb(3, 73, 131);
-    background: radial-gradient(circle, rgba(3, 73, 131, 1) 0%, rgba(1, 170, 131, 1) 100%);
-}
-
-.pcenter {
-    padding: 10% 4%;
-}
-
-.fondo-gris-trasparnte {
-    background-color: rgba(47, 47, 47, 0.5);
-    height: 100%;
-}
-
-.letra-blancas {
-    font-size: 100px;
-    color: white;
-}
-
-.nomargin {
-    margin: 0px;
-}
-
-center {
-    padding: 200px 0px 10px 0px;
+.height-50 {
+    height: 50%;
+    width: 100%;
 }
 
 .img-motorista {
     mix-blend-mode: luminosity;
     background-image: url("../recursos/img/repartidor.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.fondo-gris-trasparnte {
+    background-color: rgba(47, 47, 47, 0.5);
+    width: 80%;
+    position: absolute;
+    top: 80px;
+    left: 35px;
+}
+
+
+/*----------------CSS PARA INPUT------------------------------------------*/
+
 .botones {
-    height: 150px;
-    width: 800px;
-    left: 34px;
-    top: 13px;
     border-radius: 10px;
-    margin: 80px 0px 80px 0px;
-    border: 5px solid #000000;
-    text-decoration: underline;
+    border: 2px solid #000000;
+    width: 80%;
+    height: 20%;
+    margin: 10%;
 }
 
 .input-text {
-    border: solid 5px #000;
+    border: solid 2px #000;
     border-radius: 20px;
-    margin: 10px 0px;
+    margin: 10px 20px;
     width: 80%;
     height: 40px;
+}
+
+
+/*---------------CSS PARA LETRAS-----------------------------*/
+
+.texto-blanco {
+    color: white;
+}
+
+.texto-grande {
+    font-size: larger;
+}
+
+.texto-centrado {
+    text-align: center;
 }
