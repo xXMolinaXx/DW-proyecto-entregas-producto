@@ -1,5 +1,8 @@
-body {
+body,
+html {
     margin: 0px;
+    height: 100%;
+    width: 100%;
 }
 
 .color-verde {
@@ -8,6 +11,11 @@ body {
 
 .logo {
     width: 200px;
+}
+
+.degradado {
+    background: rgb(3, 73, 131);
+    background: radial-gradient(circle, rgba(3, 73, 131, 1) 0%, rgba(1, 170, 131, 1) 100%);
 }
 
 .pcenter {
@@ -35,6 +43,7 @@ center {
 .img-motorista {
     mix-blend-mode: luminosity;
     background-image: url("../recursos/img/repartidor.jpg");
+    background-repeat: no-repeat;
 }
 
 .botones {
@@ -49,7 +58,7 @@ center {
 }
 
 .input-text {
-    border: solid 5px #017C84;
+    border: solid 5px #000;
     border-radius: 20px;
     margin: 10px 0px;
     width: 80%;
