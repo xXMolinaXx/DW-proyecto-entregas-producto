@@ -1,14 +1,25 @@
+/*Las variavle tienen scope global*/
+
+:root {
+    --azul: #89CDF0;
+    --amarillo: rgb(250, 241, 88)
+}
+
 body,
 html {
     margin: 0px;
     height: 100%;
     width: 100%;
     box-sizing: content-box;
-    background-color: #89CDF0;
+    background-color: var(--azul);
 }
 
 .fondo-azul {
-    background-color: #89CDF0;
+    background-color: var(--azul);
+}
+
+.fondo-amarillo {
+    background-color: var(--amarillo);
 }
 
 .height-50 {
@@ -82,13 +93,12 @@ html {
 /*----------------------Tarjetas ---------------------------*/
 
 .fondo-tarjeta {
-    background-color: rgb(250, 241, 88);
+    background-color: rgb(250, 88, 236);
 }
 
 .tarjeta {
     height: 200px;
     border-radius: 20px;
-    color: white;
     padding: 10px;
     margin: 5px 0px;
 }
