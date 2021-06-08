@@ -3,6 +3,12 @@ html {
     margin: 0px;
     height: 100%;
     width: 100%;
+    box-sizing: content-box;
+    background-color: #89CDF0;
+}
+
+.fondo-azul {
+    background-color: #89CDF0;
 }
 
 .height-50 {
@@ -11,8 +17,7 @@ html {
 }
 
 .img-motorista {
-    mix-blend-mode: luminosity;
-    background-image: url("../recursos/img/repartidor.jpg");
+    background-image: url("../recursos/img/man-6051503_640.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -23,6 +28,13 @@ html {
     position: absolute;
     top: 80px;
     left: 35px;
+    padding: 25px;
+}
+
+.logo {
+    WIDTH: 80%;
+    margin-left: 8%;
+    position: relative;
 }
 
 
@@ -30,18 +42,25 @@ html {
 
 .botones {
     border-radius: 10px;
-    border: 2px solid #000000;
+    border: none;
     width: 80%;
     height: 20%;
     margin: 10%;
+    border: solid black;
+    background-color: rgb(253, 242, 29);
+}
+
+.botones:hover {
+    background-color: white;
 }
 
 .input-text {
     border: solid 2px #000;
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 10px 20px;
     width: 80%;
     height: 40px;
+    padding-left: 10px;
 }
 
 
@@ -57,4 +76,42 @@ html {
 
 .texto-centrado {
     text-align: center;
+}
+
+
+/*----------------------Tarjetas ---------------------------*/
+
+.fondo-tarjeta {
+    background-color: rgb(250, 241, 88);
+}
+
+.tarjeta {
+    height: 200px;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    margin: 5px 0px;
+}
+
+
+/*-------------------FORMAS-----------------------*/
+
+.triangulo {
+    width: 0;
+    height: 0;
+    border-left: 100px solid #f0ad4e;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    position: absolute;
+}
+
+.circulo {
+    width: 500px;
+    height: 500px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: rgb(250, 241, 88);
+    position: absolute;
+    top: -81px;
 }
