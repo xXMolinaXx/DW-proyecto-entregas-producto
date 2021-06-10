@@ -1,3 +1,5 @@
+/* You can add global styles to this file, and also import other style files */
+
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Mate+SC&display=swap');
 
 /*Las variavle tienen scope global*/
@@ -11,12 +13,10 @@
 
 body,
 html {
-    margin: 0px;
-    height: 100%;
-    width: 100%;
-    box-sizing: content-box;
-    background-color: var(--azul);
     font-family: 'Anton', sans-serif !important;
+    min-height: 100%;
+    width: 100%;
+    background-color: var(--azul) !important;
 }
 
 .fondo-azul {
@@ -33,7 +33,7 @@ html {
 }
 
 .img-motorista {
-    background-image: url("../recursos/img/man-6051503_640.png");
+    background-image: url("../src/assets/img/man-6051503_640.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-color: var(--azul);
@@ -122,12 +122,12 @@ html {
 }
 
 .circulo {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     background: rgb(250, 241, 88);
     position: absolute;
-    top: -81px;
+    top: -60px;
 }
