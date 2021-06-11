@@ -1,0 +1,17 @@
+.div-main {
+    width: 100%;
+    min-height: 100px;
+    background-color: cadetblue;
+}
+
+.enlinea {
+    display: inline;
+}
+
+.tamano {
+    width: 40px;
+}
+
+.padding {
+    padding: 5% 2% 0% 2%;
+}
