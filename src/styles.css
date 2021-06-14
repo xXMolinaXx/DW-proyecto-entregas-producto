@@ -1,0 +1,133 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Mate+SC&display=swap');
+
+/*Las variavle tienen scope global*/
+
+:root {
+    --azul: #89CDF0;
+    --amarillo: rgb(250, 241, 88);
+    --morado: rgb(235, 141, 235);
+    --verde: rgb(163, 235, 135);
+}
+
+body,
+html {
+    font-family: 'Anton', sans-serif !important;
+    min-height: 100%;
+    width: 100%;
+    /*background-color: var(--azul) !important;*/
+}
+
+.fondo-azul {
+    background-color: var(--azul);
+}
+
+.fondo-amarillo {
+    background-color: var(--amarillo);
+}
+
+.height-50 {
+    height: 50%;
+    width: 100%;
+}
+
+.img-motorista {
+    background-image: url("../src/assets/img/man-6051503_640.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--azul);
+}
+
+.fondo-gris-trasparnte {
+    background-color: rgba(47, 47, 47, 0.5);
+    width: 80%;
+    position: absolute;
+    top: 176px;
+    left: 35px;
+    padding: 25px;
+}
+
+.logo {
+    WIDTH: 80%;
+    margin-left: 8%;
+    position: relative;
+}
+
+
+/*----------------CSS PARA INPUT------------------------------------------*/
+
+.botones {
+    border-radius: 10px;
+    border: none;
+    width: 80%;
+    height: 15%;
+    margin: 4% 10%;
+    border: solid black;
+    background-color: rgb(253, 242, 29);
+}
+
+.botones:hover {
+    background-color: white;
+}
+
+.input-text {
+    border: solid 2px #000;
+    border-radius: 10px;
+    margin: 10px 20px;
+    width: 80%;
+    height: 40px;
+    padding-left: 10px;
+}
+
+
+/*---------------CSS PARA LETRAS-----------------------------*/
+
+.texto-blanco {
+    color: white;
+}
+
+.texto-grande {
+    font-size: x-large;
+}
+
+.texto-centrado {
+    text-align: center;
+}
+
+
+/*----------------------Tarjetas ---------------------------*/
+
+.fondo-tarjeta {
+    background-color: var(--verde);
+}
+
+.tarjeta {
+    height: 200px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px 0px;
+}
+
+
+/*-------------------FORMAS-----------------------*/
+
+.triangulo {
+    width: 0;
+    height: 0;
+    border-left: 100px solid #f0ad4e;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    position: absolute;
+}
+
+.circulo {
+    width: 400px;
+    height: 400px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: rgb(250, 241, 88);
+    position: absolute;
+    top: -60px;
+}

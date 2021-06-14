@@ -1,0 +1,34 @@
+<app-herramientas></app-herramientas>
+<div class="bordes tamano">
+    <div class="texto-centrado">
+        <img src="../../assets/img/bk.jpg" class="img" alt="foto empresa">
+        <div class="padding">
+            <h3>nombre</h3>
+            <p>descripcion</p>
+            <p>direccion</p>
+        </div>
+
+    </div>
+    <hr>
+    <div *ngFor="let arr of arreglo" class="padding">
+        <table style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td style="width: 10%;"><img src="../../assets/img/hamburguesa.jpg" alt="foto empresa"></td>
+                    <td>
+                        <h3>nombre medio largo</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur odit nihil quo et, ea optio recusandae quia. Reiciendis excepturi labore voluptatem, cupiditate earum nesciunt quibusdam! Maxime illum labore porro perferendis?
+                        </p>
+                    </td>
+                    <td class="texto-centrado">
+                        <p>precio</p>
+                        <button class="botones" style="width: fit-content;">Agregar</button>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+    </div>
+</div>
