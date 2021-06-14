@@ -16,7 +16,7 @@ html {
     font-family: 'Anton', sans-serif !important;
     min-height: 100%;
     width: 100%;
-    background-color: var(--azul) !important;
+    /*background-color: var(--azul) !important;*/
 }
 
 .fondo-azul {

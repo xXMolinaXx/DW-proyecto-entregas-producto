@@ -7,8 +7,7 @@ import { Component, Host, Input, OnInit, Output,EventEmitter } from '@angular/co
   styleUrls: ['./bienvenido.component.css']
 })
 export class BienvenidoComponent implements OnInit {
-  opcion:number=0;
-  constructor(@Host() private _app:AppComponent) {
+  constructor() {
    }
 
   ngOnInit(): void {

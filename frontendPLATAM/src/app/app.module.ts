@@ -9,13 +9,12 @@ import { BienvenidoComponent } from './bienvenido/bienvenido.component';
 import { FormularioIngresoComponent } from './formulario-ingreso/formulario-ingreso.component';
 import { HerramientasComponent } from './herramientas/herramientas.component';
 import { CategoriasComponent } from './categorias/categorias.component';
-import { PruebaComponent } from './prueba/prueba.component';
+import { ProductosEmpresaComponent } from './productos-empresa/productos-empresa.component';
+import { ListaProductosComponent } from './lista-productos/lista-productos.component';
 
 
-const rutas: Routes = [
-  { path: 'route', component: FormularioIngresoComponent },
-  { path: 'route2', component: BienvenidoComponent }
-];
+
+
 
 @NgModule({
   declarations: [
@@ -25,12 +24,13 @@ const rutas: Routes = [
     FormularioIngresoComponent,
     HerramientasComponent,
     CategoriasComponent,
-    PruebaComponent
+    ProductosEmpresaComponent,
+    ListaProductosComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(rutas)
+
   ],
   providers: [],
   bootstrap: [AppComponent]
