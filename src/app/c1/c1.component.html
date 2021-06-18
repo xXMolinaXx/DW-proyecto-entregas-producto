@@ -4,14 +4,14 @@
 <div style="    padding: 10% 10% 5% 10%;position: relative;">
     <h1 class="texto-centrado">REGISTRATE</h1>
     <h3 class="texto-centrado">recibiras tus tres primeras entregas gratis</h3>
-    <input class="input-text" type="text" placeholder="Nombres"><br>
-    <input class="input-text" type="text" placeholder="Apellido"><br>
-    <input class="input-text" type="text" placeholder="Correo"><br>
-    <input class="input-text" type="text" placeholder="Contrasena"><br>
+    <input [(ngModel)]="nombre" class="input-text" type="text" placeholder="Nombres"><br>
+    <input [(ngModel)]="apellido" class="input-text" type="text" placeholder="Apellido"><br>
+    <input [(ngModel)]="correo" class="input-text" type="email" placeholder="Correo"><br>
+    <input [(ngModel)]="contrasena" class="input-text" type="password" placeholder="Contrasena"><br>
     <div style="padding: 0px 50px;">
         <label for="radio-sexo">Masculino:<input type="radio" name="radio-sexo" id="radio-sexo"></label>
         <label for="radio-sexo">Femenino:<input type="radio"  name="radio-sexo" id="radio-sexo"></label>
     </div>
-    <button class="botones">Registrarse</button>
+    <button (click)="crearNuevoUsuario()" class="botones">Registrarse</button>
 </div>
 <a>regresar al inicio</a>

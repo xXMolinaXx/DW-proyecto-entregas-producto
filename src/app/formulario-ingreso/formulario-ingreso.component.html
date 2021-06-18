@@ -4,9 +4,12 @@
     <img src="../../assets/img/your-logo.png" class="logo" alt="PLATAM:LOGO">
     <h1 class="texto-centrado">REGISTRATE</h1>
     <div style="padding-top: 50%;">
-        <input class="input-text" type="text" placeholder="Correo"><br>
-        <input class="input-text" type="password" placeholder="Contrasena"><br>
-        <button class="botones">Ingresar</button>
-        <a href="#">Inicio</a>
+        <input [(ngModel)]="correo" class="input-text" type="text" placeholder="Correo"><br>
+        <input [(ngModel)]="contrasena" class="input-text" type="password" placeholder="Contrasena"><br>
+        <button (click)="entrar()" class="botones">Ingresar</button>
+        <div class="alert alert-danger" role="alert" *ngIf="mostrar">
+            usuario y contrasena incorrectos
+        </div>
+        <a routerLink="/">Inicio</a>
     </div>
 </div>

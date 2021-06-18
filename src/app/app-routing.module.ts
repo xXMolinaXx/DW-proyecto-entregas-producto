@@ -9,6 +9,7 @@ import { HerramientasComponent } from './herramientas/herramientas.component';
 import { CategoriasComponent } from './categorias/categorias.component';
 import { ProductosEmpresaComponent } from './productos-empresa/productos-empresa.component';
 import { ListaProductosComponent } from './lista-productos/lista-productos.component';
+import { ComerciosComponent } from './comercios/comercios.component';
 
 
 
@@ -18,7 +19,8 @@ const routes: Routes =  [
   { path: 'registro', component: C1Component },
   { path: 'ingreso', component: FormularioIngresoComponent },
   { path: 'categorias', component: CategoriasComponent },
-  { path: 'producto', component: ProductosEmpresaComponent },
+  { path: 'categorias/comercios/:id', component: ComerciosComponent },
+  { path: 'categoria/:id1/producto/:id2', component: ProductosEmpresaComponent },
   { path: 'lista', component: ListaProductosComponent }
 ];
 

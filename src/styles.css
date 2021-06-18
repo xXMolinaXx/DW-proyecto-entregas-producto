@@ -6,9 +6,9 @@
 
 :root {
     --azul: #89CDF0;
-    --amarillo: rgb(250, 241, 88);
+    --amarillo: rgba(250, 242, 88, 0.534);
     --morado: rgb(235, 141, 235);
-    --verde: rgb(163, 235, 135);
+    --verde: rgba(163, 235, 135, 0.657);
 }
 
 body,
@@ -99,11 +99,11 @@ html {
 /*----------------------Tarjetas ---------------------------*/
 
 .fondo-tarjeta {
-    background-color: var(--verde);
+    background-color: var(--amarillo);
 }
 
 .tarjeta {
-    height: 200px;
+    min-height: 200px;
     border-radius: 20px;
     padding: 10px;
     margin: 5px 0px;

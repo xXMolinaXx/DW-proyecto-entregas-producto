@@ -1,28 +1,28 @@
 <app-herramientas></app-herramientas>
 <div class="bordes tamano">
     <div class="texto-centrado">
-        <img src="../../assets/img/bk.jpg" class="img" alt="foto empresa">
+        <img src="../../assets/img/{{infoNegocio.urlImagen}}" class="img" alt="foto empresa" sizes="">
         <div class="padding">
-            <h3>nombre</h3>
-            <p>descripcion</p>
+            <h3>{{infoNegocio.nombre}}</h3>
+            <p>{{infoNegocio.descripcion}}</p>
             <p>direccion</p>
         </div>
 
     </div>
     <hr>
-    <div *ngFor="let arr of arreglo" class="padding">
+    <div *ngFor="let el of arreglo" class="padding">
         <table style="width: 100%;">
             <tbody>
                 <tr>
-                    <td style="width: 10%;"><img src="../../assets/img/hamburguesa.jpg" alt="foto empresa"></td>
+                    <td style="width: 10%;"><img src="../../assets/img/{{el.imagen}}" alt="foto produto" class="img-class"></td>
                     <td>
-                        <h3>nombre medio largo</h3>
+                        <h3>{{el.nombre}}</h3>
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur odit nihil quo et, ea optio recusandae quia. Reiciendis excepturi labore voluptatem, cupiditate earum nesciunt quibusdam! Maxime illum labore porro perferendis?
+                            {{el.descripcion}}
                         </p>
                     </td>
-                    <td class="texto-centrado">
-                        <p>precio</p>
+                    <td class="texto-centrado" style="width: 30%;">
+                        <p>{{el.precio}}</p>
                         <button class="botones" style="width: fit-content;">Agregar</button>
 
                     </td>

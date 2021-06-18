@@ -1,6 +1,6 @@
 .div-main {
     width: 100%;
-    min-height: 100px;
+    min-height: 50px;
     background-color: cadetblue;
 }
 
@@ -9,9 +9,23 @@
 }
 
 .tamano {
-    width: 40px;
+    width: 30px;
 }
 
 .padding {
-    padding: 5% 2% 0% 2%;
+    padding: 5%;
+}
+
+.espacio {
+    margin: 10px;
+}
+
+.salir {
+    width: 10%;
+}
+
+@media only screen and (min-width: 600px) {
+    .salir {
+        width: 35px;
+    }
 }

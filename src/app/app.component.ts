@@ -9,7 +9,6 @@ import { Routes, RouterModule } from '@angular/router';
 export class AppComponent {
 
   opcion:number = 1;
-
   cambiarOpcion(id:number){
     this.opcion=id
   }
