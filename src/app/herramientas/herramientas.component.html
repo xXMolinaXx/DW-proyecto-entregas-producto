@@ -15,14 +15,18 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown" class="espacio">
+                <li class="nav-item dropdown" class="espacio" *ngIf="mostrar">
                     <a routerLink="/lista">
-                        <p class="enlinea">1</p>
-                        <img src="../../assets/img/shopping-cart.png" alt="" class="tamano">:carrito
+
+                        <p class="enlinea">{{numeroListaProductos}}</p>
+                        <img src="../../assets/img/shopping-cart.png" alt="" class="tamano">:terminar compra
                     </a>
                 </li>
                 <li class="nav-item" class="espacio">
-                    <img src="../../assets/img/cerrar-sesion.svg" alt="" class="salir">:cerrar sesion
+                    <button style="background-color: transparent;border:none;width: fit-content;" (click)="cerrarSeccion()">
+                        <img src="../../assets/img/cerrar-sesion.svg" alt="" class="salir">:cerrar sesion
+                    </button>
+
                 </li>
             </ul>
 

@@ -1,22 +1,25 @@
+<app-herramientas></app-herramientas>
 <div class="padding">
-    <table style="width: 100%;">
+    <table style="width: 100%;" *ngFor="let el of pedidos">
         <tbody>
             <tr>
-                <td style="width: 10%;"><img src="../../assets/img/hamburguesa.jpg" alt="foto empresa"></td>
+                <td style="width: 10%;"><img src="../../assets/img/{{el.imagen}}" alt="foto producto"></td>
                 <td>
-                    <h3>nombre medio largo</h3>
+                    <h3>{{el.nombre}}</h3>
                 </td>
                 <td class="texto-centrado">
-                    <p>precio</p>
+                    <p>{{el.precio}} L unidad</p>
+                    <p>cantidades {{el.cantidad}}</p>
+
                 </td>
             </tr>
         </tbody>
     </table>
 </div>
 <div style="padding: 2%;">
-    <p>// subtota:<span>200L</span> </p>
-    <p>// envio:<span>50L</span> </p>
-    <p>// total:<span>250L</span> </p>
+    <p>// subtota:<span>{{subtotal}} L</span> </p>
+    <p>// envio:<span>{{envio}} L</span> </p>
+    <p>// total:<span>{{total}} L</span> </p>
 </div>
 <button class="botones">
     Finalizar compra

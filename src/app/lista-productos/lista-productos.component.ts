@@ -7,13 +7,26 @@ import {Router} from '@angular/router';
   styleUrls: ['./lista-productos.component.css']
 })
 export class ListaProductosComponent implements OnInit {
-
-  constructor(private _router:Router) { }
+  pedidos:any='';
+  subtotal=0;
+  total=0
+  envio=80;
+  constructor(private _router:Router) { 
+    this.pedidos=sessionStorage.getItem('pedidos');
+    this.pedidos=JSON.parse(this.pedidos);
+    console.log(this.pedidos);
+    for(let el of this.pedidos){
+      this.subtotal+=el.precio*el.cantidad
+    }
+    this.total=this.subtotal+this.envio
+  }
 
   ngOnInit(): void {
     if(sessionStorage.getItem('id')==null){
       this._router.navigate(['/']);
     }
   }
+
+
 
 }

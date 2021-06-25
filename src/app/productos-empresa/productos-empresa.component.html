@@ -10,7 +10,7 @@
 
     </div>
     <hr>
-    <div *ngFor="let el of arreglo" class="padding">
+    <div *ngFor="let el of arreglo,let i=index" class="padding">
         <table style="width: 100%;">
             <tbody>
                 <tr>
@@ -22,8 +22,8 @@
                         </p>
                     </td>
                     <td class="texto-centrado" style="width: 30%;">
-                        <p>{{el.precio}}</p>
-                        <button class="botones" style="width: fit-content;">Agregar</button>
+                        <p>{{el.precio}} </p>
+                        <button class="botones" style="width: fit-content;" (click)="agregarOrden(i)">Agregar</button>
 
                     </td>
                 </tr>
@@ -31,4 +31,11 @@
         </table>
         <hr>
     </div>
+</div>
+
+<div id="div-cantidad" *ngIf="mostrar">
+    <button style="margin-left:90% ;" (click)="cerrar()">X</button>
+    <br>
+    <label>Cuantas ordenes deseara:<input type="number" style="width: 50px;"  [(ngModel)]="cantidadProductos"></label>
+    <button class="botones" style="width: fit-content;" (click)="agregarCantidad()">Agregar</button>
 </div>

@@ -28,3 +28,14 @@
         width: 50%;
     }
 }
+
+#div-cantidad {
+    position: absolute;
+    width: 50%;
+    border: solid black;
+    border-radius: 10px;
+    top: 50%;
+    left: 20%;
+    padding: 2%;
+    background-color: white;
+}
